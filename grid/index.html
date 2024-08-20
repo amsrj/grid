@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grid</title>
+    <style>
+      body {
+        background-color: brown;
+      }
+
+      .playground {
+        border: 10px solid maroon;
+        margin: 0 auto;
+        border-radius: 20px;
+        background-color: skyblue;
+        padding: 10px;
+
+        width: 980px;
+        height: 400px;
+        display: grid;
+
+        grid-template-columns: auto auto;
+
+        /* 원룸(가상 컨테이닝블록) 자체의 너비가 최대치로 */
+        justify-content: stretch;
+        align-content: stretch;
+
+        /* 원룸(가상 컨테이닝블록) 내부의 .frog가 최대치로 */
+        justify-items: stretch;
+        align-items: stretch;
+
+        /* column이 두개로 예약 되어져 있기 때문에 grid-auto-columns의 지정값은 휴업이당 */
+        grid-auto-columns: 100px;
+
+        /* 이놈은 계속적으로 쓰이고 있당, 왜냐? grid-template-rows가 none이니깡 */
+        grid-auto-rows: auto;
+      }
+
+      .frog {
+        background-color: mediumseagreen;
+        color: lime;
+        font-size: 40px;
+        border: 6px solid green;
+        border-radius: 10px;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="playground">
+      <div class="frog">Frog</div>
+      <div class="frog">Frog</div>
+      <div class="frog">Frog</div>
+      <div class="frog">Frog</div>
+    </div>
+
+  </body>
+</html>
