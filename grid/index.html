@@ -15,10 +15,14 @@
         padding: 10px;
 
         width: 980px;
-        height: 400px;
+        height: 500px;
         display: grid;
 
-        grid-template-columns: auto auto;
+        /* 두개의 칼럼 예약 */
+        grid-template-columns: 1fr 1fr;
+
+        /* 두개의 로우 예약 */
+        grid-template-rows: 1fr 1fr;
 
         /* 원룸(가상 컨테이닝블록) 자체의 너비가 최대치로 */
         justify-content: stretch;
@@ -31,7 +35,7 @@
         /* column이 두개로 예약 되어져 있기 때문에 grid-auto-columns의 지정값은 휴업이당 */
         grid-auto-columns: 100px;
 
-        /* 이놈은 계속적으로 쓰이고 있당, 왜냐? grid-template-rows가 none이니깡 */
+        /* row가 두개로 예약 되어져 있기 때문에 grid-auto-rows의 지정값은 휴업이당 */
         grid-auto-rows: auto;
       }
 
@@ -48,7 +52,7 @@
   <body>
 
     <div class="playground">
-      <div class="frog">Frog Frog Frog Frog</div>
+      <div class="frog">Frog Frog Frog Lorem ipsum dol</div>
       <div class="frog">Frog</div>
       <div class="frog">Frog</div>
       <div class="frog">Frog</div>
