@@ -24,9 +24,11 @@
         /* 두개의 로우 예약 */
         grid-template-rows: 1fr 1fr;
 
-        /* 원룸(가상 컨테이닝블록) 자체의 너비가 최대치로 */
-        justify-content: stretch;
-        align-content: stretch;
+        /* 
+        모든 아이템들이 다 1fr 단위로 되어있기 때문에 *-content 정렬 기법은 의미가 없어짐 
+        justify-content: center;
+        align-content: center;
+        */
 
         /* 원룸(가상 컨테이닝블록) 내부의 .frog가 최대치로 */
         justify-items: stretch;
