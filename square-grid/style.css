@@ -50,7 +50,7 @@ body {
 .item.long {
     background-color: dodgerblue;
 
-    /* 첫번째 방법 */
-    grid-column-start: 4;
-    grid-row: 2 / span 3;
+    /* 두번째 방법 */
+    grid-column-start: auto;
+    grid-row: auto / span 3;
 }
