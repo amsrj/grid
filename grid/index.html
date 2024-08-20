@@ -18,11 +18,11 @@
         height: 500px;
         display: grid;
 
-        /* 두개의 칼럼 예약 */
-        grid-template-columns: 1fr 1fr;
+        /* 두개의 칼럼 예약 : minmax( 0, 너비 ) 개념으로, min-width: 0 초기화 해주는 기법 구현, 그리드 컨테이너에서 안정성 확보  */
+        grid-template-columns: minmax( 0, 1fr ) minmax( 0, 1fr );
 
-        /* 두개의 로우 예약 */
-        grid-template-rows: 1fr 1fr;
+        /* 두개의 로우 예약 : minmax( 0, 높이 ) 개념으로, min-height: 0 초기화 해주는 기법 구현, 그리드 컨테이너에서 안정성 확보  */
+        grid-template-rows: minmax( 0, 1fr ) minmax( 0, 1fr );
 
         /* 원룸(가상 컨테이닝블록) 내부의 .frog가 최대치로 */
         justify-items: stretch;
@@ -41,10 +41,6 @@
         font-size: 40px;
         border: 6px solid green;
         border-radius: 10px;
-        /*
-        */
-        min-width: 0;
-        min-height: 0;
       }
 
     </style>
