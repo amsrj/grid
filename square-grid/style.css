@@ -33,7 +33,11 @@ body {
 .item.active {
     background-color: orangered;
     grid-column-start: 1;
-    /* 얌마 너가 시킨대로 column-start 1 위치로 갔엉 */
-    /* grid-row-start는 별말 없었잖앵! */
+    /* 
+        얌마 너가 시킨대로 column-start 1 위치로 갔엉
+        grid-row-start는 별말 없었잖앵! 
+        (auto는 브라우저가 판단하는 값)
+        마크업 순서를 최대한 유지하려고 노력함  
+    */
     grid-row-start: auto;
 }
