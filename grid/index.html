@@ -24,12 +24,6 @@
         /* 두개의 로우 예약 */
         grid-template-rows: 1fr 1fr;
 
-        /* 
-        모든 아이템들이 다 1fr 단위로 되어있기 때문에 *-content 정렬 기법은 의미가 없어짐 
-        justify-content: center;
-        align-content: center;
-        */
-
         /* 원룸(가상 컨테이닝블록) 내부의 .frog가 최대치로 */
         justify-items: stretch;
         align-items: stretch;
@@ -37,8 +31,8 @@
         /* column이 두개로 예약 되어져 있기 때문에 grid-auto-columns의 지정값은 휴업이당 */
         grid-auto-columns: 100px;
 
-        /* row가 두개로 예약 되어져 있기 때문에 grid-auto-rows의 지정값은 휴업이당 */
-        grid-auto-rows: auto;
+        /* row가 두개로 예약 되어져 있기 때문에 grid-auto-rows의 지정값은 휴업이당 -> 오! 일하자! */
+        grid-auto-rows: 100px;
       }
 
       .frog {
@@ -55,6 +49,7 @@
 
     <div class="playground">
       <div class="frog">Frog Frog Frog Lorem ipsum dol</div>
+      <div class="frog">Frog</div>
       <div class="frog">Frog</div>
       <div class="frog">Frog</div>
       <div class="frog">Frog</div>
