@@ -16,10 +16,24 @@ body {
     grid-template-rows: repeat( 4, 1fr );
 
     gap: 20px;
+
+    /* 알잘딱깔센 -> dense */
+    grid-auto-flow: row;
+
+    grid-auto-columns: auto;
+    grid-auto-rows: auto;
 }
 
 .item {
-    background-color: #eee;
+    background-color: orange;
     padding: 20px;
     font-size: 60px;
+}
+
+.item.active {
+    background-color: orangered;
+    grid-column-start: 1;
+    /* 얌마 너가 시킨대로 column-start 1 위치로 갔엉 */
+    /* grid-row-start는 별말 없었잖앵! */
+    grid-row-start: auto;
 }
