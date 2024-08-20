@@ -29,7 +29,9 @@ body {
         -> 즉 고정값이 아니게! 
   */
   grid-template-columns: 244px minmax( 0, 830px );
-  grid-template-rows: 600px;
+
+  /* rows도 minmax개념을 도입하여 완성도를 높임 */
+  grid-template-rows: minmax( 600px, auto );
 }
 
 .sidebar {
