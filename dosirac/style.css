@@ -18,6 +18,18 @@ body {
   background-color: brown;
 }
 
+.tong {
+  border: 10px solid blue;
+  display: grid;
+  gap: 20px;
+
+  /* 200px 기준에서 repeat의 숫자가 결정 */
+  grid-template-columns: repeat( auto-fit, 200px );
+
+  /* 200px 기준에서 repeat의 숫자가 결정 + 1fr */
+  grid-template-columns: repeat( auto-fit, minmax( 200px, 1fr ) );
+}
+
 .kan {
   border-radius: 20px;
   border: 10px solid maroon;
