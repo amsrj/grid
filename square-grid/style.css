@@ -31,9 +31,16 @@ body {
 }
 
 .item.big {
+    /*
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
+    */
+    /*
+    단축 속성
+    */
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
     background-color: orangered;
 }
